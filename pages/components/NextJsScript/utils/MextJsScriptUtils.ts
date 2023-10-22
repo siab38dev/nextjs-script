@@ -1,6 +1,9 @@
+//variables
 const ERROR_CODES = {
   RemoveDownloadEvent: `Remove "DOMContentLoaded" listener from the js code`,
 };
+
+export const DEFAULT_ERROR = "Error on script code";
 
 export const getScriptFromLinks = async (url: string): Promise<string> => {
   try {
@@ -14,6 +17,8 @@ export const getScriptFromLinks = async (url: string): Promise<string> => {
     throw err;
   }
 };
+
+//functions
 
 export const checkInputScript = (
   script: string

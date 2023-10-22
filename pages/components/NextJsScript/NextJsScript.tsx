@@ -1,16 +1,11 @@
 import { useEffect } from "react";
+import { NextJsScriptProps } from "./NextJsScritp";
 import {
   checkInputScript,
+  DEFAULT_ERROR,
   executeCode,
   getScriptFromLinks,
-} from "./MextJsScriptUtils";
-
-type NextJsScriptProps = {
-  content?: string;
-  src?: string;
-  onError?: Function;
-};
-const DEFAULT_ERROR = "Error on script code";
+} from "./utils/MextJsScriptUtils";
 
 const NextJsScript = ({ content, src, onError }: NextJsScriptProps) => {
   useEffect(() => {
