@@ -5,7 +5,7 @@ import {
   DEFAULT_ERROR,
   executeCode,
   getScriptFromLinks,
-} from "./utils/MextJsScriptUtils";
+} from "./NextJsScriptUtils";
 
 const NextJsScript = ({ src, onError, children }: NextJsScriptProps) => {
   useEffect(() => {
