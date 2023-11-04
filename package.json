@@ -1,7 +1,8 @@
 {
   "name": "nextjs-script",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
+  "main": "./dist/NextJsScript/NextJsScript.tsx",
   "babel": {
     "presets": [
       "@babel/preset-react"
