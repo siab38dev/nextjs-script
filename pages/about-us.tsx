@@ -9,10 +9,9 @@ const AboutUs = () => {
       <div className="button" />
       <Link href="/">Home</Link>
       <br />
-      <NextJsScript
-        src={"/script.js"}
-        onError={(err) => console.log("errorrrrrrr", err)}
-      />
+      <NextJsScript onError={(err) => console.log("errorrrrrrr", err)}>
+        {`console.log('hi')`}
+      </NextJsScript>
     </div>
   );
 };
