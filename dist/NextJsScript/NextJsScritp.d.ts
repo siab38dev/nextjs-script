@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 export type NextJsScriptProps = {
-  content?: string;
   src?: string;
   onError?: Function;
+  children: ReactNode;
 };

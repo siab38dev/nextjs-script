@@ -7,15 +7,15 @@ import {
   getScriptFromLinks,
 } from "./utils/MextJsScriptUtils";
 
-const NextJsScript = ({ content, src, onError }: NextJsScriptProps) => {
+const NextJsScript = ({ src, onError, children }: NextJsScriptProps) => {
   useEffect(() => {
-    if (!content) return;
-    const inputScriptChecking = checkInputScript(content);
+    if (!children || typeof children !== "string") return;
+    const inputScriptChecking = checkInputScript(children);
     if (inputScriptChecking?.isError) {
       onError(inputScriptChecking ?? DEFAULT_ERROR);
     }
-    executeCode(content);
-  }, [content]);
+    executeCode(children);
+  }, [children]);
 
   useEffect(() => {
     if (!src) return;
