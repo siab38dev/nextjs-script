@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 
 import NextJsScript from "./components/NextJsScript/NextJsScript";
